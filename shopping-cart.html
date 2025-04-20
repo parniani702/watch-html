@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/booststrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+    <link rel="stylesheet" href="./styles/app.css">
+    <link rel="stylesheet" href="./styles/shopping-cart.css">
+    <title>shopping-Cart</title>
+</head>
+<body>
+  <!-- Header - page -->
+  <div class="container">
+    <nav class="navbar navbar-expand-sm" style="background-color: #21242B;">
+      <a class="navbar-brand fw-bold text-light" href="https://arashpr.ir/watch">TIMES</a>
+      <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navbarMenu" 
+        aria-controls="navbarMenu" 
+        aria-expanded="false" 
+        aria-label="Toggle navigation"
+        style="border-color: #fff; background: #fff;"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link fw-bold text-light" href="#">WATCHS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light opacity-75" href="#">ABOUT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light opacity-75" href="#">STORE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+          </li>
+        </ul>
+        <div class="d-flex align-items-center">
+          <div class="dropdown me-3">
+            <a 
+              class="nav-link dropdown-toggle text-light" 
+              href="#" 
+              id="languageDropdown" 
+              role="button" 
+              data-bs-toggle="dropdown" 
+              aria-expanded="false"
+            >
+              ENG
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="languageDropdown">
+              <li><a class="dropdown-item" href="#">ENG</a></li>
+              <li><a class="dropdown-item" href="#">FA</a></li>
+            </ul>
+          </div>
+          <a href="#" class="nav-link text-light">LOG IN</a>
+        </div>
+      </div>
+    </nav>
+  </div>  
+  <!-- Start Main -->
+   <div class="container">
+    <section class="shopping-cart d-none d-sm-block" style="margin-top: 50px;">
+      <ul class="d-flex justify-content-evenly">
+        <li class="color-gold fw-lighter">PRODUCT</li>
+        <li class="color-gold fw-lighter">UNITPRICE</li>
+        <li class="color-gold fw-lighter">QUANTITY</li>
+        <li class="color-gold fw-lighter">PRICE</li>
+      </ul>
+      <hr class="color-gold">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-12 col-sm-5">
+          <div class="d-flex justify-content-center align-items-center">
+            <img src="./img/shopping-cart_product.png" width="170" height="170" class="img-fluid" alt="">
+            <span class="text-light">Sky-Dweller 6000</span>
+          </div>
+        </div>
+        <div class="col-12 col-sm-3">
+          <h5 class="text-light text-center">50$</h5>
+        </div>
+        <div class="col-12 col-sm-2">
+          <div class="d-flex justify-content-center align-items-center gap-4">
+            <i class="fa fa-minus color-gold"></i>
+            <h4 class="text-light">1</h4>
+            <i class="fa fa-plus color-gold"></i>
+          </div>
+        </div>
+        <div class="col-12 col-sm-2">
+          <h5 class="text-light text-center">50$</h5>
+        </div>
+      </div>
+      <hr class="color-gold">
+      <div class="d-flex justify-content-between ">
+        <div class="btns-desc">
+          <a type="button" href="#" style="padding: 8px 12px;" class=" btn-gold" data-bs-toggle="modal" data-bs-target="#staticBackdrop">CHECK OUT</a>
+          <a href="#" style="padding: 8px 12px;" class="btn-transparent">CONTINUE shopping</a>
+        </div>
+        <div class="price-desc text-light">
+          <h3>SUB TOTAL: 50$</h3>
+        </div>
+      </div>
+    </section>
+    <section class="mobile d-flex justify-content-center align-content-center d-flex d-sm-none">
+      <div class="card">
+        <div class="card-body bg-dark">
+          <img src="./img/shopping-cart_product.png"  class="img-fluid card-img-top" alt="">
+          <div class="card-body">
+            <div class="list-group list-group-flush">
+              <div class="list-group-item bg-dark">
+                <h3 class="color-gold"> WATCH NAME : <span class="text-light">Sky-Dweller 6000</span> </h3>
+              </div>
+              <div class="list-group-item bg-dark">
+                <h3 class="color-gold"> UNIT PRICE : <span class="text-light">50$</span> </h3>
+              </div>
+              <div class="list-group-item bg-dark color-gold d-flex justify-content-between align-items-center">
+                <i class="fa fa-minus"></i>
+                <h4 class="text-light">1</h4>
+                <i class="fa fa-plus"></i>
+              </div>
+              <div class="list-group-item bg-dark">
+                <div class="btns flex-wrap m-3">
+                  <a type="button" href="#" style="padding: 8px 12px;" class=" btn-gold" data-bs-toggle="modal" data-bs-target="#staticBackdrop">CHECK OUT</a>
+                </div>
+              </div>
+              <div class="list-group-item bg-dark mt-3">
+                <a href="#" style="padding: 8px 12px;" class="btn-transparent">CONTINUE shopping</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+     <!-- Modal -->
+     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+       <div class="modal-dialog modal-dialog-centered">
+         <div class="modal-content bg-dark">
+           <div class="modal-header">
+             <h1 class="modal-title fs-5 color-gold" id="staticBackdropLabel">shopping CART</h1>
+             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+       </div>
+      <div class="modal-body">
+        <div class="d-flex justify-content-between align-items-center">
+          <img src="./img/shopping-cart_product.png" width="100" height="100" class="img-fluid" alt="">
+          <div class="d-flex flex-column text-light">
+            <h5>Sky-Dweller 6000</h5>
+            <div class="color-gold d-flex align-items-center">
+              <i class="fa fa-minus"></i>
+              <h5 class="text-light p-4">1</h5>
+              <i class="fa fa-plus"></i>
+            </div>
+          </div>
+          <div class="d-felx flex-column">
+            <i class="fa fa-minus color-gold mb-5"></i>
+            <h5 class="text-light">50$</h5>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Understood</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- End Main -->
+  <!-- Footer Page -->
+  <div class="container">
+    <footer class="footer">
+        <div class="row">
+            <div class="col">
+                <div class="times text-light">
+                    <h1>TIMES</h1>
+                    <p class="opacity-50">When it came near enough he perceived that it was not grass; there were no blades, but only purple roots the roots.</p>
+                    <div class="times-box d-flex  opacity-50">
+                        <p class="fw-bold">© 2020 TIMES.</p>
+                        <p >All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="site-map d-flex flex-column">
+                    <h4 class="color-gold">Site Map</h4>
+                    <div class="opacity-50 d-flex flex-column gap-3">
+                        <a href="#">Home</a>
+                        <a href="#">Product</a>
+                        <a href="#">About</a>
+                        <a href="#">Blog</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="contacts text-light">
+                    <h4 class="color-gold">Contacts</h4>
+                    <p class="opacity-50">Email:time@gmail.com</p>
+                    <p class="opacity-50">Phone:+989914563453</p>
+                    <div class="icon-box">
+                        <a href="#">
+                            <i class="fa-brands fa-instagram fa-2xl"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-twitter fa-2xl"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-pinterest fa-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="subscribe text-light">
+                    <h4 class="color-gold">Subscribe Newsletter</h4>
+                    <p class="opacity-50">What looked like a small patch of purple .</p>
+                    <div class="input-group">
+                        <input type="text" class=" form-control" placeholder="Enter Your Email" arila-describedby="basic-addon2">
+                        <span class="input-group-text" id="basic-addon2">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+  </div>
+</body>
+<script src="./js/bootstrap.min.js"></script>
+
+</html>

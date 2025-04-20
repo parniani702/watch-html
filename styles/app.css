@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'Bold';
+    src: url(../fonts/Manrope-Bold.ttf);
+}
+body {
+     background: #21242B;
+     font-family: 'Bold';
+
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/*  App   */
+.nav {
+    background: #21242B;
+}
+.header-main {
+    margin-bottom: 130px;
+}
+.header-main__content {
+
+}
+
+.header-main__img {
+    /* max-width: 600px; */
+}
+.contents {
+    margin-bottom: 130px;
+}
+.contents-title {}
+.contents-description {
+    color: #868686;
+}
+.video{
+
+}
+.video-content {
+    max-width: 350px;
+}
+.video-content__img {
+    width: 600px;
+    height: 400px;
+    margin-right: 10px;
+}
+.models {
+
+}
+.models-content {
+    margin: 60px 0;
+}
+.models-cards {
+
+}
+.model-card {
+
+}
+.model-card__img {
+    width: 270px;
+    height: 270px;
+}
+.model-card__title{
+    font-size: 20px;
+    
+}
+.model-card__text {
+    font-size: 14px;
+    color: #868686;
+}
+.circels {
+
+}
+.circels input {
+    width: 26px;
+    height: 26px;
+    border-radius: 30px;
+}
+.circels input:first-child {
+    background-color: #8d7966;
+}
+.circels input:nth-child(2) {
+    background-color: #BBD2C5;
+}
+.circels input:last-child {
+    background-color: #C68B59;
+}
+.watch-info {
+    margin-bottom: 60px;
+}
+.icon-box  a i {
+    color: #8D7966;
+}
+.footer {
+    margin-top: 80px;
+}
+/* helper */
+.btn-transparent {
+    color: #8d7966;
+    border: 2px solid #8D7966;
+    background-color: transparent;
+}
+.btn-gold {
+    color: black;
+    background: #8D7966;
+}
+.alert-gold {
+    background: transparent;
+    border: 2px solid #8D7966;
+}
+.border-gold {
+    border: 2px solid #8D7966;
+}
+.color-gold {
+    color: #8D7966;
+}
+.bg-gold {
+    background: #8D7966;
+}
+.bg-dark {
+    background-color: #21242B;
+}
